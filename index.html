@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Physique-Chimie | Espace Élève – Lycée Maroc</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f6f8;color:#333}
+header{background:#0d47a1;color:#fff;padding:20px;text-align:center}
+nav{background:#1565c0;display:flex;justify-content:center;flex-wrap:wrap}
+nav a{color:#fff;padding:12px 18px;text-decoration:none;font-weight:bold}
+nav a:hover{background:#0d47a1}
+section{padding:25px}
+.card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1);margin-bottom:20px}
+h2{color:#0d47a1}
+.btn{display:inline-block;padding:8px 15px;background:#1565c0;color:#fff;border-radius:5px;text-decoration:none}
+.btn:hover{background:#0d47a1}
+footer{background:#0d47a1;color:#fff;text-align:center;padding:15px}
+.qcm button{margin:5px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Physique & Chimie – Espace des élèves lycee militaire Ifrane </h1>
+<p>Lycée marocain | Tronc Commun – 1ère Bac SM et Exp – 2ème Bac( SM , PC et SVT ) </p>
+</header>
+
+<nav>
+<a href="#home">Accueil</a>
+<a href="#tc">Tronc Commun</a>
+<a href="#1bac">1ère Bac</a>
+<a href="#2bac">2ème Bac</a>
+<a href="#qcm">QCM</a>
+</nav>
+
+<section id="home">
+<div class="card">
+<h2>Bienvenue cher élève 👋</h2>
+<p>Cette plateforme est conçue pour t’aider à réussir en <b>Physique & Chimie</b> selon le programme marocain :</p>
+<ul>
+<li>📘 Cours clairs et organisés</li>
+<li>✏️ Exercices corrigés</li>
+<li>📝 QCM pour t’auto-évaluer</li>
+<li>📄 Examens nationaux</li>
+</ul>
+</div>
+</section>
+
+<section id="tc">
+<div class="card">
+<h2>Tronc Commun Sciences</h2>
+<ul>
+<li><a href="cours/tc_mesures.pdf">Mesures et unités</a></li>
+<li><a href="cours/tc_mouvement.pdf">Mouvement et repos</a></li>
+<li><a href="cours/tc_electricite.pdf">Électricité</a></li>
+</ul>
+</div>
+</section>
+
+<section id="1bac">
+<div class="card">
+<h2>1ère Année Bac Sciences</h2>
+<ul>
+<li>Travail et énergie</li>
+<li>Énergie interne</li>
+<li>Optique géométrique</li>
+<li>Réactions chimiques</li>
+</ul>
+</div>
+</section>
+
+<section id="2bac">
+<div class="card">
+<h2>2ème Année Bac PC & SVT</h2>
+<ul>
+<li>Ondes mécaniques et lumineuses</li>
+<li>Électricité (RC – RL – RLC)</li>
+<li>Cinétique chimique</li>
+<li>Acides et bases</li>
+</ul>
+</div>
+</section>
+
+<section id="qcm">
+<div class="card">
+<h2>QCM – Auto-évaluation</h2>
+<div class="qcm">
+<p><b>Question :</b> Quelle est l’unité de l’énergie ?</p>
+<button onclick="check('a')">Newton</button>
+<button onclick="check('b')">Joule</button>
+<button onclick="check('c')">Watt</button>
+<p id="res"></p>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2025 – Physique & Chimie Maroc | Espace Élève</p>
+</footer>
+
+<script>
+function check(r){
+ document.getElementById('res').innerHTML = (r==='b') ? '✔ Bonne réponse' : '✖ Réponse incorrecte';
+}
+</script>
+
+</body>
+</html>
